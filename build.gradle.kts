@@ -7,7 +7,7 @@ plugins {
     application
 }
 
-var ktor_version = "1.6.3"
+var ktorVersion = "1.6.6"
 
 group = "eu.sebaro.scraper"
 version = "1.0"
@@ -33,10 +33,11 @@ application {
 }
 
 dependencies {
-    implementation("org.seleniumhq.selenium:selenium-java:4.0.0-beta-4")
+    implementation("org.seleniumhq.selenium:selenium-java:4.1.0")
     implementation(kotlin("stdlib"))
-    implementation("io.ktor:ktor-server-core:$ktor_version")
-    implementation("io.ktor:ktor-server-netty:$ktor_version")
-    implementation("ch.qos.logback:logback-classic:1.2.5")
-    implementation("io.ktor:ktor-serialization:$ktor_version")
+    implementation("io.ktor:ktor-server-core:$ktorVersion")
+    implementation("io.ktor:ktor-server-netty:$ktorVersion")
+    implementation("ch.qos.logback:logback-classic:1.2.9")
+    implementation("io.ktor:ktor-serialization:$ktorVersion")
+    implementation("com.google.firebase:firebase-admin:8.1.0")
 }
