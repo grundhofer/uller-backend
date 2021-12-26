@@ -26,5 +26,5 @@
 .cxx
 local.properties
 /.idea/
-/build/
 /.gradle/
+/build/
